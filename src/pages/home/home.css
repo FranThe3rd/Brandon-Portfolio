@@ -12,8 +12,9 @@
 .title-div {
     margin: 0 auto;
     margin-top: 150px;
-    width: 60%;
+    width: 65%;
     text-align: left;
+    background-color: red;
 }
 
 .firstName {
@@ -33,6 +34,23 @@
 }
 
 
+@media screen and (max-width: 1363px) {
+    .firstName {
+        font-size: clamp(3rem, 10vw, 6rem);
+        color: white;
+        margin: 0;
+        letter-spacing: 0.1em;
+
+    }
+
+    .lastName {
+        letter-spacing: 0.1em;
+        font-size: clamp(3rem, 10vw, 6rem);
+        color: white;
+        margin: 0;
+        margin-left: 0px;
+    }
+}
 
 
 
@@ -40,15 +58,18 @@
 
 @media screen and (max-width: 580px) {
     .firstName {
-        font-size: clamp(2rem, 10vw, 8rem);
+        font-size: clamp(3rem, 4vw, 3rem);
         color: white;
         margin: 0;
+        letter-spacing: 0.1em;
+
     }
 
     .lastName {
-        font-size: clamp(2rem, 10vw, 8rem);
+        letter-spacing: 0.1em;
+        font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
         margin: 0;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 }

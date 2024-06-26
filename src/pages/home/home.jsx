@@ -20,7 +20,7 @@ const AnimatedText = styled.h1`
 
 const Home = () => {
 
-    const texts = ['Guaman','Photographer','Videographer',]
+    const texts = ['Photographer','Videography','Film Editor']
 
 
     const [text,setText] = useState('Guaman')
@@ -32,7 +32,7 @@ const Home = () => {
             const nextIndex = (currentIndex + 1) % texts.length;
             return texts[nextIndex];
           });
-        }, 5000); // Change text every 2 seconds
+        }, 5300); // Change text every 2 seconds
     
         return () => clearInterval(intervalId); // Clean up interval on component unmount
       }, []);
