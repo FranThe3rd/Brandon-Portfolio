@@ -60,7 +60,6 @@
 
     .title-div {
         width: 90%;
-        background-color: red;
     }
     .firstName {
         font-size: clamp(3rem, 4vw, 3rem);
