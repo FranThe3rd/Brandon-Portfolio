@@ -1,0 +1,54 @@
+@import url(https://db.onlinewebfonts.com/c/06e3b3825de17ac0bd5d48d5a769e0ad?family=UltraSolar+Normal);
+
+.home {
+    background-color: rgb(17, 17, 17);   
+     font-family: 'UltraSolar Normal';
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+    min-height: 1920px;
+}
+
+.title-div {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 60%;
+    text-align: left;
+}
+
+.firstName {
+
+    font-size: clamp(2rem, 10vw, 8rem);
+    color: white;
+    margin: 0;
+}
+
+.lastName {
+    font-size: clamp(2rem, 10vw, 8rem);
+    color: white;
+    margin: 0;
+    margin-left: 200px;
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 580px) {
+    .firstName {
+        font-size: clamp(2rem, 10vw, 8rem);
+        color: white;
+        margin: 0;
+    }
+
+    .lastName {
+        font-size: clamp(2rem, 10vw, 8rem);
+        color: white;
+        margin: 0;
+        margin-left: 20px;
+    }
+}
