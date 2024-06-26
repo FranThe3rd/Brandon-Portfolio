@@ -45,7 +45,6 @@ const Home = () => {
   /* Cursor Animation Start-------------------------------------------------------- */
 
   const [cursorVariant, setCursorVariant] = useState('default');
-  const [durationValue, setDurationValue] = useState(0);
 
   const { x, y } = useMousePosition();
 
@@ -61,7 +60,8 @@ const Home = () => {
       width: 150,
       x: x - 70,
       y: y - 70,
-      backgroundColor: 'black',
+      mixBlendMode: 'difference',
+
 
     }
 
@@ -69,16 +69,11 @@ const Home = () => {
 
   const textEnter = () => {
     setCursorVariant('text');
-    setDurationValue(0.5);
   }
 
   const textLeave = () => {
     setCursorVariant('default');
-    setDurationValue(0.5);
-    setTimeout(() => {
-      setDurationValue(0);  
-    }, 400);
-
+   
   }
     
 
@@ -101,7 +96,7 @@ const Home = () => {
         transition={{
           type: 'tween',
           ease: 'backOut',
-          duration: durationValue
+          duration: 0.3
         }}
       />
 
