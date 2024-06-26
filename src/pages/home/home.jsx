@@ -20,7 +20,7 @@ const AnimatedText = styled.h1`
 
 const Home = () => {
 
-    const texts = ['Photographer','Videography','Film Editor']
+    const texts = ['Photographer','Videographer','Film Editor']
 
 
     const [text,setText] = useState('Guaman')
