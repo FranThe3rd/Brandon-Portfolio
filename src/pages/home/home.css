@@ -61,7 +61,7 @@
         width: 90%;
     }
     .firstName {
-        font-size: clamp(3rem, 4vw, 3rem);
+        font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
         margin: 0;
         letter-spacing: 0.1em;
