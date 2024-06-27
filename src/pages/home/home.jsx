@@ -23,6 +23,11 @@ const AnimatedText = styled.h1`
   animation: ${fadeIn} 1s ease-in-out;
 `;
 
+const AnimatedPic = styled.img`
+  animation: ${fadeIn} 1s ease-in-out;
+`;
+
+
 /* Keyframes End-------------------------------------------------------- */
 const Home = () => {
 
@@ -43,6 +48,73 @@ const Home = () => {
   }, []);
 
   /* Text Animation End-------------------------------------------------------- */
+
+  /* Picture Animation Start-------------------------------------------------------- */
+
+  const pictureOne = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
+  const [picOne, setPicOne] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setPicOne((prevPic) => {
+        const currentIndex = pictureOne.indexOf(prevPic);
+        const nextIndex = (currentIndex + 1) % pictureOne.length;
+        return pictureOne[nextIndex];
+      });
+    }, 6000); // Change text every 2 seconds
+
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
+  }, []);
+
+  const pictureTwo = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
+  const [picTwo, setPicTwo] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setPicTwo((prevPic) => {
+        const currentIndex = pictureTwo.indexOf(prevPic);
+        const nextIndex = (currentIndex + 1) % pictureTwo.length;
+        return pictureTwo[nextIndex];
+      });
+    }, 6300); // Change text every 2 seconds
+
+    return () => clearInterval(intervalId); // Clean up interval on component unmount
+  }, []);
+
+  const pictureThree = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
+  const [picThree, setPicThree] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setPicThree((prevPic) => {
+        const currentIndex = pictureThree.indexOf(prevPic);
+        const nextIndex = (currentIndex + 1) % pictureThree.length;
+        return pictureThree[nextIndex];
+      });
+    }, 6100);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const pictureFour = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
+  const [picFour, setPicFour] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setPicFour((prevPic) => {
+        const currentIndex = pictureFour.indexOf(prevPic);
+        const nextIndex = (currentIndex + 1) % pictureFour.length;
+        return pictureFour[nextIndex];
+      });
+    }, 6400);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  /* Picture Animation End-------------------------------------------------------- */
+
+
+
 
   /* Cursor Animation Start-------------------------------------------------------- */
 
@@ -95,28 +167,28 @@ const Home = () => {
 
       <div className='card-container'>
         <div className='card'>
-          <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg" alt="" />
+          <AnimatedPic src={picOne} key={picOne} alt="" />
           <h3 className='card-text'>Lorem, ipsum dolor.</h3>
           <h4 className='card-subtitle'>Lorem, ipsum.</h4>
 
         </div>
 
         <div className='card2'>
-          <img src="https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg" alt="" />
+          <AnimatedPic src={picTwo} key={picTwo} alt="" />
           <h3 className='card-text'>Lorem, ipsum dolor.</h3>
           <h4 className='card-subtitle'>Lorem, ipsum.</h4>
 
         </div>
 
         <div className='card'>
-          <img src="https://www.maxfosterphotography.com/images/640/Teton-Treasures.jpg" alt="" />
-          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
+        <AnimatedPic src={picThree} key={picThree} alt="" />
+        <h3 className='card-text'>Lorem, ipsum dolor.</h3>
           <h4 className='card-subtitle'>Lorem, ipsum.</h4>
 
         </div>
 
         <div className='card2'>
-          <img src="https://www.jessleephotos.com/images/xl/Cascaperefflowers.jpg" alt="" />
+        <AnimatedPic src={picFour} key={picFour} alt="" />
           <h3 className='card-text'>Lorem, ipsum dolor.</h3>
           <h4 className='card-subtitle'>Lorem, ipsum.</h4>
 

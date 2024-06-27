@@ -61,6 +61,7 @@
 /* Home Card Section */
 
 .card-container {
+    max-width: 1547px;
     font-family: 'Open Sans', sans-serif;
     width: 95%;
     margin: 0 auto;
@@ -123,6 +124,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: .7s ease-in-out;
+    font-weight: 500;
 }
 
 .card-subtitle {
