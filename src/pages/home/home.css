@@ -1,12 +1,23 @@
 @import url(https://db.onlinewebfonts.com/c/06e3b3825de17ac0bd5d48d5a769e0ad?family=UltraSolar+Normal);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Home Hero Section */
+
+
+
+
 
 .home {
-    background-color: rgb(17, 17, 17);   
-     font-family: 'UltraSolar Normal';
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 100%;
+    font-family: 'UltraSolar Normal';
     font-size: 2em;
     text-align: center;
     padding-top: 20px;
-    min-height: 1920px;
+    padding-bottom: 50px;
+   
 }
 
 .title-div {
@@ -47,6 +58,128 @@
     z-index: 0;
 }
 
+/* Home Card Section */
+
+.card-container {
+    font-family: 'Open Sans', sans-serif;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin-top: 200px;
+    height: 100%;
+    gap: 20px;
+}
+
+.card {
+    max-width: 328px;
+    max-height: 495px;
+    height: 100%;
+    width: 95%;
+    opacity: 0.7;
+    transition: .7s ease-in-out;
+    position: relative;
+
+    
+
+}
+
+.card2 {
+    max-width: 328px;
+    max-height: 495px;
+    height: 100%;
+    width: 95%;
+    margin-top: 100px;
+    opacity: 0.7;
+    transition: .7s ease-in-out;
+    position: relative;
+
+}
+
+.card:hover,
+.card2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.card-container img {
+    max-width: 330px;
+    max-height: 495px;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+
+
+
+.card-text {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .7s ease-in-out;
+}
+
+.card-subtitle {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .7s ease-in-out;
+    font-weight: 100;
+
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.card2:hover .card-text {
+    opacity: 1;
+}
+
+.card:hover .card-subtitle {
+    opacity: 1;
+}
+
+.card2:hover .card-subtitle {
+    opacity: 1;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1405px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        max-width: 500px;
+        max-height: 700px;
+    }
+
+    .card2 {
+        max-width: 500px;
+        max-height: 700px;
+    }
+
+    .card-container img {
+        max-width: 500px;
+        max-height: 700px;
+        object-fit: cover;
+    }
+
+    }
+
 
 @media screen and (max-width: 1363px) {
     .firstName {
@@ -64,6 +197,10 @@
         margin: 0;
         margin-left: 0px;
     }
+
+    .title-div {
+        width: 70%;
+    }
 }
 
 @media (max-width: 1050px) {
@@ -71,8 +208,33 @@
         display: none;
         cursor: pointer;
     }
+
+}
+
+@media screen and (max-width: 634px) {
+    .card-container {
+        margin-top: 100px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        margin-top: 0px;
+    }
+
+    .card2 {
+        margin-top: 0px;
+    }
+
+    .card:hover {
+        transform: scale(1);
+    }
+    .card2:hover {
+        transform: scale(1);
+    }
+        
     
 
+    
 }
 
 
@@ -83,11 +245,12 @@
     .title-div {
         width: 90%;
     }
+
     .firstName {
         font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
         margin: 0;
-        font-weight: 100 ;
+        font-weight: 100;
 
     }
 
@@ -96,7 +259,7 @@
         color: white;
         margin: 0;
         margin-left: 0px;
-        font-weight: 100 ;
+        font-weight: 100;
 
     }
 }

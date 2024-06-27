@@ -74,11 +74,6 @@ const Home = () => {
   /* Cursor Animation End-------------------------------------------------------- */
 
 
-
-
-
-
-
   return (
     <div className='home'>
       <Navbar />
@@ -98,8 +93,40 @@ const Home = () => {
         }}
       />
 
+      <div className='card-container'>
+        <div className='card'>
+          <img src="https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg" alt="" />
+          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
+          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+
+        </div>
+
+        <div className='card2'>
+          <img src="https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg" alt="" />
+          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
+          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+
+        </div>
+
+        <div className='card'>
+          <img src="https://www.maxfosterphotography.com/images/640/Teton-Treasures.jpg" alt="" />
+          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
+          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+
+        </div>
+
+        <div className='card2'>
+          <img src="https://www.jessleephotos.com/images/xl/Cascaperefflowers.jpg" alt="" />
+          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
+          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+
+        </div>
+
+      </div>
+
 
     </div>
+
   )
 }
 
