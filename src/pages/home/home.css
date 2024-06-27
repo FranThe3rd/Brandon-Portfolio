@@ -27,6 +27,18 @@
     text-align: left;
 }
 
+.shape1 {
+    display: block;
+    left: 60%;
+}
+
+.shape2 {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
 .firstName {
 
     font-size: clamp(2rem, 10vw, 8rem);
@@ -209,6 +221,14 @@
     .cursor {
         display: none;
         cursor: pointer;
+    }
+
+    .shape1 {
+        display: none;
+    }   
+
+    .shape2 {
+        display: none;
     }
 
 }

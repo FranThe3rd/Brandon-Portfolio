@@ -7,6 +7,8 @@ import { useState, useEffect, useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
 import { CursorContext } from '../../components/cursor/CursorContext'
+import shape1 from '../../assets/shape1.svg'
+import shape2 from '../../assets/shape2.svg'
 
 /* Keyframes Start-------------------------------------------------------- */
 
@@ -153,6 +155,9 @@ const Home = () => {
         <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className='firstName'>Brandon</h1>
         <AnimatedText onMouseEnter={textEnter} onMouseLeave={textLeave} className='lastName' key={text}>{text}</AnimatedText>
       </div>
+      <img className='shape1' src={shape1} alt="" />
+      <img className='shape2' src={shape2} alt="" />
+
 
       < motion.div
         className='cursor'
