@@ -3,11 +3,12 @@
 import React from 'react';
 import './home.css'
 import Navbar from '../../components/navbar/navbar';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
-import useMousePosition from '../../animations/cursor/useMousePosition';
+import { CursorContext } from '../../components/cursor/CursorContext'
+
+/* Keyframes Start-------------------------------------------------------- */
 
 const fadeIn = keyframes`
   from {
@@ -22,6 +23,7 @@ const AnimatedText = styled.h1`
   animation: ${fadeIn} 1s ease-in-out;
 `;
 
+/* Keyframes End-------------------------------------------------------- */
 const Home = () => {
 
   /* Text Animation Start-------------------------------------------------------- */
@@ -44,9 +46,7 @@ const Home = () => {
 
   /* Cursor Animation Start-------------------------------------------------------- */
 
-  const [cursorVariant, setCursorVariant] = useState('default');
-
-  const { x, y } = useMousePosition();
+  const { cursorVariant, x, y, textEnter, textLeave } = useContext(CursorContext);
 
   const variants = {
     default: {
@@ -54,28 +54,26 @@ const Home = () => {
       y: y - 14,
       backgroundColor: 'white',
     },
-
     text: {
       height: 150,
       width: 150,
       x: x - 70,
       y: y - 70,
       mixBlendMode: 'difference',
+    },
 
-
+    navText: {
+      height: 100,
+      width: 100,
+      x: x - 50,
+      y: y - 50,
+      mixBlendMode: 'difference',
     }
-
   }
 
-  const textEnter = () => {
-    setCursorVariant('text');
-  }
+  /* Cursor Animation End-------------------------------------------------------- */
 
-  const textLeave = () => {
-    setCursorVariant('default');
-   
-  }
-    
+
 
 
 
