@@ -1,10 +1,17 @@
-@import url(https://db.onlinewebfonts.com/c/06e3b3825de17ac0bd5d48d5a769e0ad?family=UltraSolar+Normal);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 /* Home Hero Section */
 
-
+@font-face {
+    font-family: "UltraSolar Normal";
+    src: url("https://db.onlinewebfonts.com/t/06e3b3825de17ac0bd5d48d5a769e0ad.eot");
+    src: url("https://db.onlinewebfonts.com/t/06e3b3825de17ac0bd5d48d5a769e0ad.eot?#iefix")format("embedded-opentype"),
+    url("../../assets/UltraSolar\ Normal.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/06e3b3825de17ac0bd5d48d5a769e0ad.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/06e3b3825de17ac0bd5d48d5a769e0ad.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/06e3b3825de17ac0bd5d48d5a769e0ad.svg#UltraSolar Normal")format("svg");
+}
 
 
 
@@ -12,7 +19,8 @@
     background-color: rgb(17, 17, 17);
     width: 100%;
     height: 100%;
-    font-family: 'UltraSolar Normal';
+    src: url('../../assets/UltraSolar\ Normal.woff2');
+    font-family: 'UltraSolar Normal', sans-serif;
     font-size: 2em;
     text-align: center;
     padding-top: 20px;
