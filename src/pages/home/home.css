@@ -274,13 +274,17 @@
 
     .title-div {
         width: 90%;
+        text-align: center;
+
     }
 
     .firstName {
+        display: inline-block;
         font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
         margin: 0;
         font-weight: 100;
+        text-align: center;
 
     }
 
@@ -290,6 +294,10 @@
         margin: 0;
         margin-left: 0px;
         font-weight: 100;
+        text-align: center;
+        display: inline-block;
+
+
 
     }
 }
