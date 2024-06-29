@@ -9,6 +9,12 @@ import { motion } from 'framer-motion';
 import { CursorContext } from '../../components/cursor/CursorContext'
 import shape1 from '../../assets/shape1.svg'
 import shape2 from '../../assets/shape2.svg'
+import shape3 from '../../assets/shape3.svg'
+import shape4 from '../../assets/shape4.png'
+import Index from '../../components/ZoomParallax';
+import aboutImage from '../../assets/brandon-about.jpg'
+import aboutQuote from '../../assets/about-quote.svg'
+
 
 /* Keyframes Start-------------------------------------------------------- */
 
@@ -196,11 +202,33 @@ const Home = () => {
         <AnimatedPic src={picFour} key={picFour} alt="" />
           <h3 className='card-text'>Lorem, ipsum dolor.</h3>
           <h4 className='card-subtitle'>Lorem, ipsum.</h4>
-
         </div>
+      </div>
+      <img className='shape3' src={shape3} alt="" />
+      <div className='border-line1'></div>
+      
+      <div className='zoom-container'>
+        <Index />
 
       </div>
+      <div className='about-container'>
 
+      <div className='about-me'>
+        <div className="about-me-image">
+        <img src={aboutImage} alt="" />
+        </div>
+        <div className='about-me-text'>
+          <h1>Hi. I'm</h1>
+          <h1>Brandon Guaman</h1>
+          <img src={aboutQuote} className='about-quote' alt="" />
+          <p>A passionate photographer that's currently doing Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+      </div>
+      <div className='shape4-container'>
+      <img className='shape4' src={shape4} alt="" />
+
+      </div>
 
     </div>
 

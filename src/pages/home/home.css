@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 
 /* Home Hero Section */
@@ -47,6 +48,17 @@
     right: 0;
 }
 
+.shape3 {
+    position: absolute;
+    display: block;
+    left: 40px;
+    margin-top: 30px;
+}
+
+
+
+
+
 .firstName {
 
     font-size: clamp(2rem, 10vw, 8rem);
@@ -91,6 +103,7 @@
     margin-top: 200px;
     height: 100%;
     gap: 20px;
+    padding-bottom: 80px;
 }
 
 .card {
@@ -176,6 +189,83 @@
     opacity: 1;
 }
 
+.border-line1 {
+    border: 0.5px solid rgba(255, 255, 255, 0.176);
+}
+
+.zoom-container {
+    margin-top: 100px;
+    height: 300vh;
+
+}
+
+.zoom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.about-container {
+    margin-top: 160px;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    width: 80%;
+    gap: 20px;
+}
+
+
+
+.about-me-image {
+}
+
+.about-me-image img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.about-me-text{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: white;
+}
+
+.about-me-text h1 {
+    font-size: clamp(2rem, 3vw, 3.55rem);
+  
+}
+
+
+
+.about-me-text p {
+    display: inline-block;
+    font-size: clamp(0.8rem, 3vw, 1.55rem);
+    max-width: 500px;
+    line-height: 1.7;
+    margin-left: 60px;
+    margin-top: 0px;
+
+}
+
+.about-quote {
+    display: block;
+}
+
+.shape4-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+}
+
+
 
 /* Media Queries */
 
@@ -238,6 +328,24 @@
     .shape2 {
         display: none;
     }
+    .shape3 {
+        display: none;
+    }
+
+    .shape4 {
+        display: none;
+    }
+
+    .about-me {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+   
+
+    .about-me > :nth-child(1) {
+        grid-row: 2;
+    }
+
 
 }
 
@@ -273,29 +381,35 @@
 @media screen and (max-width: 580px) {
 
     .title-div {
+        font-family: 'Comfortaa', sans-serif;
         width: 90%;
         text-align: center;
 
     }
 
     .firstName {
-        display: inline-block;
+        display: block;
         font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
         margin: 0;
-        font-weight: 100;
         text-align: center;
+        font-weight: 100;
+        margin: 0 auto;
+
 
     }
 
     .lastName {
         font-size: clamp(2.3rem, 4vw, 3rem);
         color: white;
-        margin: 0;
-        margin-left: 0px;
-        font-weight: 100;
+  
         text-align: center;
-        display: inline-block;
+        display: block;
+        font-weight: 100;
+        margin: 0 auto;
+
+
+
 
 
 

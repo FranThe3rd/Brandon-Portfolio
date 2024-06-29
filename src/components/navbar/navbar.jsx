@@ -4,6 +4,8 @@ import { useState,useContext} from 'react'
 import { NavLink } from 'react-router-dom'
 import { List } from 'phosphor-react'
 import {CursorContext} from '../cursor/CursorContext'
+import { Link as LinkScroll } from 'react-scroll';
+
 
 
 const Navbar = () => {
@@ -34,7 +36,10 @@ const Navbar = () => {
                             <NavLink onClick={handleShowNavbar} to="/">HOME</NavLink>
                         </li>
                         <li onMouseEnter={navTextEnter} onMouseLeave={textLeave}>
-                            <NavLink onClick={handleShowNavbar} to="/discover">GALLERY</NavLink>
+                        <LinkScroll smooth={true} duration={1000} to='card' offset={200}>
+
+                            <NavLink onClick={handleShowNavbar} >GALLERY</NavLink>
+                        </LinkScroll>
                         </li>
                         
                         <li onMouseEnter={navTextEnter} onMouseLeave={textLeave}>
