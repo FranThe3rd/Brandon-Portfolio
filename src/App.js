@@ -5,6 +5,7 @@ import Home from './pages/home/home';
 import { CursorProvider } from './components/cursor/CursorContext';
 
 function App() {
+
   return (
     <CursorProvider>
     <div className="App">

@@ -14,6 +14,9 @@ import shape4 from '../../assets/shape4.png'
 import Index from '../../components/ZoomParallax';
 import aboutImage from '../../assets/brandon-about.jpg'
 import aboutQuote from '../../assets/about-quote.svg'
+import useHidden from '../../animations/transitions/useHidden';
+import useSlideToLeft from '../../animations/transitions/useSlideToLeft';
+import useSlideToRight from '../../animations/transitions/useSlideToRight';
 
 
 /* Keyframes Start-------------------------------------------------------- */
@@ -38,6 +41,10 @@ const AnimatedPic = styled.img`
 
 /* Keyframes End-------------------------------------------------------- */
 const Home = () => {
+
+  useHidden();
+  useSlideToLeft();
+  useSlideToRight();
 
   /* Text Animation Start-------------------------------------------------------- */
   const texts = ['Photographer', 'Videographer', 'Film Editor']
@@ -157,8 +164,8 @@ const Home = () => {
   return (
     <div className='home'>
       <Navbar />
-      <div className='title-div'>
-        <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className='firstName'>Brandon</h1>
+      <div className='title-div hidden'>
+        <h1  onMouseEnter={textEnter} onMouseLeave={textLeave} className='firstName'>Brandon</h1>
         <AnimatedText onMouseEnter={textEnter} onMouseLeave={textLeave} className='lastName' key={text}>{text}</AnimatedText>
       </div>
       <img className='shape1' src={shape1} alt="" />
@@ -176,7 +183,7 @@ const Home = () => {
         }}
       />
 
-      <div className='card-container'>
+      <div className='card-container hidden'>
         <div className='card'>
           <AnimatedPic src={picOne} key={picOne} alt="" />
           <h3 className='card-text'>Lorem, ipsum dolor.</h3>
@@ -214,10 +221,10 @@ const Home = () => {
       <div className='about-container'>
 
       <div className='about-me'>
-        <div className="about-me-image">
+        <div className="about-me-image right">
         <img src={aboutImage} alt="" />
         </div>
-        <div className='about-me-text'>
+        <div className='about-me-text left'>
           <h1>Hi. I'm</h1>
           <h1>Brandon Guaman</h1>
           <img src={aboutQuote} className='about-quote' alt="" />
