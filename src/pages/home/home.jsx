@@ -133,7 +133,7 @@ const Home = () => {
 
   /* Cursor Animation Start-------------------------------------------------------- */
 
-  const { cursorVariant, x, y, textEnter, textLeave } = useContext(CursorContext);
+  const { cursorVariant, x, y, textEnter, textLeave, navTextEnter } = useContext(CursorContext);
 
   const variants = {
     default: {
@@ -146,7 +146,9 @@ const Home = () => {
       width: 150,
       x: x - 70,
       y: y - 70,
-      mixBlendMode: 'difference',
+      mixBlendMode: ' difference',
+      zIndex: 1,
+
     },
 
     navText: {
@@ -155,6 +157,8 @@ const Home = () => {
       x: x - 50,
       y: y - 50,
       mixBlendMode: 'difference',
+      zIndex: 1,
+
     }
   }
 
@@ -225,10 +229,10 @@ const Home = () => {
         <img src={aboutImage} alt="" />
         </div>
         <div className='about-me-text left'>
-          <h1>Hi. I'm</h1>
-          <h1>Brandon Guaman</h1>
+          <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Hi. I'm</h1>
+          <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Brandon Guaman</h1>
           <img src={aboutQuote} className='about-quote' alt="" />
-          <p>A passionate photographer that's currently doing Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          <p onMouseEnter={navTextEnter} onMouseLeave={textLeave}>A passionate photographer that's currently doing Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
         </div>
       </div>
       </div>
