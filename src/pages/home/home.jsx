@@ -17,6 +17,7 @@ import aboutQuote from '../../assets/about-quote.svg'
 import useHidden from '../../animations/transitions/useHidden';
 import useSlideToLeft from '../../animations/transitions/useSlideToLeft';
 import useSlideToRight from '../../animations/transitions/useSlideToRight';
+import { ArrowRight } from 'phosphor-react';
 
 
 /* Keyframes Start-------------------------------------------------------- */
@@ -237,7 +238,38 @@ const Home = () => {
       </div>
       </div>
       <div className='shape4-container'>
-      <img className='shape4' src={shape4} alt="" />
+      <img className='shape4' src={shape4} alt="" /></div>
+
+      <div className='services'>
+        <h4 className='services-title'>MY SERVICES</h4>
+
+        <div className='service'>
+          <div className='service-text'>
+          <h1 className='hidden'>Photography</h1>
+          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          </div>
+          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+        </div>
+
+        <div className='service'>
+          <div className='service-text'>
+          <h1 className='hidden'>Videography</h1>
+          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          </div>
+          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight/></button>
+
+        </div>
+
+        <div className='service'>
+          <div className='service-text'>
+          <h1 className='hidden'>Film Editing</h1>
+          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          </div>
+          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+
+        </div>
+
+        
 
       </div>
 

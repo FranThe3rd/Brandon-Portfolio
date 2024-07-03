@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -95,7 +94,7 @@
 
 .card-container {
     max-width: 1547px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 95%;
     margin: 0 auto;
     display: grid;
@@ -146,11 +145,14 @@
     max-height: 495px;
     height: 100%;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+
 
 
     
 }
+
 
 
 
@@ -237,12 +239,14 @@
 .about-me-image img {
     max-width: 400px;
     width: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 
 
 .about-me-text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     color: white;
 
@@ -281,6 +285,69 @@
     justify-content: end;
     align-items: center;
     text-align: center;
+}
+
+.services {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 80px;
+}
+
+.services-title {
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.533);
+    text-align: left;
+    font-weight: 500;
+}
+
+.service {
+    border-top: 1px solid rgba(255, 255, 255, 0.176);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.176);
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.service h1 {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+    color: white;
+    text-align: left;
+    font-weight: 500;
+}
+.service p {
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    color: white;
+    text-align: left;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.service-button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(46, 46, 46, 0.2);
+    border: 1px solid white;
+    transition: .5s ease-in-out;
+
+}
+
+.service-button:hover {
+    background-color: white;
+}
+
+.service-button:hover svg {
+
+    color: black;
+
+}
+
+.service-button svg {
+    width: 42px;
+    height: 42px;
+    color: white;
+
 }
 
 
@@ -367,6 +434,22 @@
 
 }
 
+@media screen and (max-width: 715px) {
+
+    .service-button {
+        width: 80px;
+        height: 80px;
+    }
+    .service-button svg {
+        width: 24px;
+        height: 24px;
+        color: white;
+    
+    }
+
+}
+
+
 @media screen and (max-width: 634px) {
     .card-container {
         margin-top: 100px;
@@ -386,6 +469,17 @@
     }
     .card2:hover {
         transform: scale(1);
+    }
+
+    .service-button {
+        width: 60px;
+        height: 60px;
+    }
+    .service-button svg {
+        width: 20px;
+        height: 20px;
+        color: white;
+    
     }
         
     
@@ -425,7 +519,6 @@
         display: block;
         font-weight: 100;
         margin: 0 auto;
-
 
 
 
