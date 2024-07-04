@@ -109,8 +109,8 @@
 }
 
 .card {
-    max-width: 328px;
-    max-height: 495px;
+    max-width: 400px;
+    min-height: 600px;
     height: 100%;
     width: 95%;
     opacity: 0.7;
@@ -123,10 +123,9 @@
 
 .card2 {
     max-width: 328px;
-    max-height: 495px;
+    min-height: 600px;
     height: 100%;
     width: 95%;
-    margin-top: 100px;
     opacity: 0.7;
     transition: .7s ease-in-out;
     position: relative;
@@ -162,7 +161,7 @@
 
 .card-text {
     position: absolute;
-    bottom: 40px;
+    bottom: 120px;
     left: 20px;
     color: white;
     font-size: 24px;
@@ -173,6 +172,31 @@
 }
 
 .card-subtitle {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .7s ease-in-out;
+    font-weight: 100;
+
+}
+
+.card-text2 {
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .7s ease-in-out;
+    font-weight: 500;
+}
+
+.card-subtitle2 {
     position: absolute;
     bottom: 0px;
     left: 20px;
@@ -190,7 +214,7 @@
 }
 
 
-.card2:hover .card-text {
+.card2:hover .card-text2 {
     opacity: 1;
 }
 
@@ -198,7 +222,7 @@
     opacity: 1;
 }
 
-.card2:hover .card-subtitle {
+.card2:hover .card-subtitle2 {
     opacity: 1;
 }
 
@@ -363,6 +387,16 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .card-text {
+        bottom: 40px;
+        left: 20px;
+    }
+
+    .card-subtitle {
+        bottom: 0px;
+        left: 20px;
+    }
+
     .card {
         max-width: 500px;
         max-height: 700px;
@@ -375,7 +409,7 @@
 
     .card-container img {
         max-width: 500px;
-        max-height: 700px;
+        max-height: 590px;
         object-fit: cover;
     }
 

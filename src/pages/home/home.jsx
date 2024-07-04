@@ -85,8 +85,8 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureTwo = ['https://i.imgur.com/E6zMnzg.jpg','https://i.imgur.com/kyk1Zn1.jpg']
-  const [picTwo, setPicTwo] = useState('https://i.imgur.com/E6zMnzg.jpg')
+  const pictureTwo = ['https://i.imgur.com/MmIeaok.png','https://i.imgur.com/1htvc4D.png']
+  const [picTwo, setPicTwo] = useState('https://i.imgur.com/MmIeaok.png')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -115,8 +115,8 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const pictureFour = ['https://i.imgur.com/L5EaD2u.jpeg','https://i.imgur.com/1DAaQHG.jpg']
-  const [picFour, setPicFour] = useState('https://previews.dropbox.com/p/thumb/ACUxuJ6J4HU1peJ-RTAO2jlYCids0wphBP3bhsSTmE-0BiVSlVYytOoUz6SOj7sOR9N62VtapCMRcKsu896oOfIgdxyM_tAYElWvxpyzQB-FmMpYsh-1n8_ceb2AAeO6R5CKp_RwzwPx2hCGDqKZEqXpU_c_UtqvQVoVeGpDZ9e5vOt0m3DlwuBv6Or9SIcpxt8QG3E1tCQ8Vwk2jQbkk9x1VVSnsOkdTpMP6JFNcxXfJUDJ4sfls2z6U5SHUvybpA4fjN7OvvUaNuxHQQZxf8HxY3pjMPWlqSrEuMykqaXpKUeNxyNsobMB854vLo9YrC082ZLXhIk8Pqhh8Nb5PPB-dls4Aa9xaNNWnCDV0OCormTcjqNJPeuox1HcHH29EC4U_S6JSG81gtZK79cKv17UCWYrEOp8LHsYey0XvrFLFFfmyDimIgv2WEBWkbPLAwhrB36kPs7IhABdBJoa-0p0fFFS1O8smmaXfGzbgD3bwgZz1TaXtFMvf5Vtppbe8UPKI-roRQg4ICTHl9Buztr5DE5pjf-LB3hc0YSisA7AiI0F58scz7ynmAsYgovUsPjS2j3PpJ_p8rFy55eNrUMu9W1y8JH9wI7LG1Zu4oSywA/p.jpeg')
+  const pictureFour = ['https://i.imgur.com/LZKNcdf.png','https://i.imgur.com/W5v0fb4.png']
+  const [picFour, setPicFour] = useState('https://i.imgur.com/LZKNcdf.png')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -196,13 +196,12 @@ const Home = () => {
           <AnimatedPic src={picOne} key={picOne} alt="" />
           <h3 className='card-text'>Urban Tapestry</h3>
           <h4 className='card-subtitle'>Street Photography</h4>
-
         </div>
 
         <div className='card2'>
           <AnimatedPic src={picTwo} key={picTwo} alt="" />
-          <h3 className='card-text'>Beauty in Decay</h3>
-          <h4 className='card-subtitle'>Architectural Photography</h4>
+          <h3 className='card-text2'>Beauty in Decay</h3>
+          <h4 className='card-subtitle2'>Architectural Photography</h4>
 
         </div>
 
@@ -215,9 +214,9 @@ const Home = () => {
 
         <div className='card2'>
         <AnimatedPic src={picFour} key={picFour} alt="" />
-          <h3 className='card-text'>The Golden Hour
+          <h3 className='card-text2'>The Golden Hour
           </h3>
-          <h4 className='card-subtitle'>Sunset Photography</h4>
+          <h4 className='card-subtitle2'>Sunset Photography</h4>
         </div>
       </div>
       <img className='shape3' src={shape3} alt="" />
