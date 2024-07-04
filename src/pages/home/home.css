@@ -186,7 +186,7 @@
 
 .card-text2 {
     position: absolute;
-    bottom: 40px;
+    bottom: 140px;
     left: 20px;
     color: white;
     font-size: 24px;
@@ -198,7 +198,7 @@
 
 .card-subtitle2 {
     position: absolute;
-    bottom: 0px;
+    bottom: 100px;
     left: 20px;
     color: white;
     font-size: 20px;
@@ -394,6 +394,16 @@
 
     .card-subtitle {
         bottom: 0px;
+        left: 20px;
+    }
+
+    .card-text2 {
+        bottom: 60px;
+        left: 20px;
+    }
+
+    .card-subtitle2 {
+        bottom: 20px;
         left: 20px;
     }
 
