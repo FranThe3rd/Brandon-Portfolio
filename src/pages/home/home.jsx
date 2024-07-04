@@ -85,8 +85,8 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureTwo = ['https://i.imgur.com/oiVqgW2.jpg','https://i.imgur.com/ZU5kinF.jpg','https://i.imgur.com/pY39aXH.jpeg']
-  const [picTwo, setPicTwo] = useState('https://i.imgur.com/oiVqgW2.jpg')
+  const pictureTwo = ['https://i.imgur.com/E6zMnzg.jpg','https://i.imgur.com/kyk1Zn1.jpg']
+  const [picTwo, setPicTwo] = useState('https://i.imgur.com/E6zMnzg.jpg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -95,7 +95,7 @@ const Home = () => {
         const nextIndex = (currentIndex + 1) % pictureTwo.length;
         return pictureTwo[nextIndex];
       });
-    }, 6300); // Change text every 2 seconds
+    }, 5000); // Change text every 2 seconds
 
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
