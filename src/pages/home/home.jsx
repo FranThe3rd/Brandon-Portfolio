@@ -20,6 +20,8 @@ import useSlideToRight from '../../animations/transitions/useSlideToRight';
 import { ArrowRight } from 'phosphor-react';
 
 
+
+
 /* Keyframes Start-------------------------------------------------------- */
 
 const fadeIn = keyframes`
@@ -67,8 +69,8 @@ const Home = () => {
 
   /* Picture Animation Start-------------------------------------------------------- */
 
-  const pictureOne = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
-  const [picOne, setPicOne] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+  const pictureOne = ['https://previews.dropbox.com/p/thumb/ACV0CTF6R88QuE-cIIdfYYmDUll_k5QLDaVHS7XETST6XXxYXqcK71aslI_lTmMab8A2OI5RwYxgMV1ThylfEoOZonQQoPZgQjtbBHWbinMQEYX79W4SjZAGZS-P6ZVgsoIp5e6xR_VBrxwpnik9J2MrM94Y_H95k_n_Leke54oAhHFYNeT_ALaE6U5FoUP7PH6u4cAZl-5wh7JPPLWxDAIjXRB8Yg23dXBpygUfEAKD3Ii0OwEQuEpu_DNqR53Phu0dapLOwkQIj_4ja43rwPAWvVEtJLWUzE76vXFIoeYvnmea8AAl3EZC45v7Y8Samc5kOtr5cItnOz44fVNlSG_Mw81s4eaucFeaFzYhIq0i8UjkDOqv36qqMRL3OyFLiQN2xQAw97vXGIaVXfKTsAqxlRolD-Nx7Uh4nUDopemnCTgqHcKdBMgLRco8dProIc8xQJcCbNAxahQ5pTLa92otLdMKSvraNEP9wP6euMc8DasP41Wt69ftJwMwGKW3i3ZWBybvA9RadCGsOd8wOr7SwbUqzga-tV4_DQYyiAASh8YWHFyb0kkLDKJBiXQXPaE/p.jpeg','https://previews.dropbox.com/p/thumb/ACV2Dwezh0CD29W5rH4YhEukwvo51yOhSjOYGBmPxfo_kzZYwSwJD_BkSrVdlcciIpuz6nsEq8ccyUdhrdGHDKD146erNSkmI0n2v2MPzGeuZJb015dmZ8PfGleYGvpN6J-BT8h3lG1yJAjYFs6ekPBXh21Hn81hVuSC1dDkSgF9VnzEmWMHfLOmX7NR61GNHILSlDItSMXJsIuzg6DltWgI0hw_tu-3RlPpifvkiNR-ezDnlHtXa2EMB4Gn0KmWBcvgLW7bO8fVz9cObZT9eoCuifHry91fjzMTG0l6ax-XMM44n-zoAQ-tlpLjE7xZBi04VfPd5aUGrpUTQ9vdgLifjuEn3NMLu10hQ1J2lXUQZBz2dHN9gV8YebAKrbVd5gYthne9Yx3DdZ-olGpjEN2ul2nkHZjchqymLa5H8_uOspgNc4SIC8_9OXQUSHyjs-Sg8rgqOpt59Mqk7DQPSmPhVrhS8yMNPEf5WnlvRC3rGoYRwhkNox_H58GZ_Sk1SZs/p.jpeg']
+  const [picOne, setPicOne] = useState('https://previews.dropbox.com/p/thumb/ACV0CTF6R88QuE-cIIdfYYmDUll_k5QLDaVHS7XETST6XXxYXqcK71aslI_lTmMab8A2OI5RwYxgMV1ThylfEoOZonQQoPZgQjtbBHWbinMQEYX79W4SjZAGZS-P6ZVgsoIp5e6xR_VBrxwpnik9J2MrM94Y_H95k_n_Leke54oAhHFYNeT_ALaE6U5FoUP7PH6u4cAZl-5wh7JPPLWxDAIjXRB8Yg23dXBpygUfEAKD3Ii0OwEQuEpu_DNqR53Phu0dapLOwkQIj_4ja43rwPAWvVEtJLWUzE76vXFIoeYvnmea8AAl3EZC45v7Y8Samc5kOtr5cItnOz44fVNlSG_Mw81s4eaucFeaFzYhIq0i8UjkDOqv36qqMRL3OyFLiQN2xQAw97vXGIaVXfKTsAqxlRolD-Nx7Uh4nUDopemnCTgqHcKdBMgLRco8dProIc8xQJcCbNAxahQ5pTLa92otLdMKSvraNEP9wP6euMc8DasP41Wt69ftJwMwGKW3i3ZWBybvA9RadCGsOd8wOr7SwbUqzga-tV4_DQYyiAASh8YWHFyb0kkLDKJBiXQXPaE/p.jpeg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -82,8 +84,8 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureTwo = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
-  const [picTwo, setPicTwo] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+  const pictureTwo = ['https://previews.dropbox.com/p/thumb/ACW-0_te9rkfhCoDR73pmO1f5zIORQJW4vtAYU-pA7WX7zYHG-L9uJuRShVkaVHhhbNVYNQenA2OquOIcNyWT-k34SXRFiRfUdWOaHWSL8RJpxaAGkqHK0iZI5PwsHCAEPO5BOy6VGtWsmFhffnTgHSvFhl_kGH8ZRe8rce_NaVOrzE2D7iqAzBM7XVaeCKQGV2XOpaKTNO2IrUu_8U2P7ca5oSAvi9Am9puFGNb_qkUIjWnJRGBXgLv0ZcdYY1kVsUIfVQZP1w7UCWwJy9XfK2HAkA-MdTBCBEp_uzFbE-yaxrgEJCSJsaU2d6QYKyxTt0BhsxS9ApwInlyp84l-vxr22uBnwbj25ImSogd_hyk0J4BUo1J2XgKIdkYFv3lmpCtKfVZmg0I2S7n4CrZUYsYH0D59cHSXn_2mWrVNrLpVmZGBcDMXn_J4qZhl4tiUEwAX2GdtWrmkAnF_LSQ4tjrd1_KwDpQiLBqUKKtQ0SCrC4jAqzGkWEEnXnX0guaLMHivynJYgdICTnqON1QfHTbawck3xRxehWMhUtZcL06yygPaDRfHbANd5sG_h7Djr5A2a6Ss-AsWBHBlT5fj1-6iXcQy2nQFh8JLjYxKp1JcQ/p.jpeg','https://previews.dropbox.com/p/thumb/ACV1SSXYOpIBlsTBV0l_KVSAIDIbBXjQrVBcGol1c7NKcQvaDrbB_UeXqX5tHG7pxFh9MjAK1Sa22tRTRG4lsU3DrZ-7Y_FROYXrIBtzpIUWNNITluotwgqjYkX497p9ETA3fg-d_2ok2qEPHpnHHQYgu9I8KVfLy5V73OLGyaRvy4DIbPhPSJ4vOZWYsLPxbRfn9IUbFGdvcy7qgRW_P9_g9gduTuNNCEHhmxr8N5IXvdIrjtOB8vhdv3NcVcaOX8mwo4Tr319HSlHqKiXc0DLvx-qVbOpzTQxUI_SJ2XZ3kmJgxYlKsHia-VViBDSu0GUxGQKdO22s2u2jg9xLzt5APCvxu_T74sYDNHUaj25cd0XrBGxwSlzbXJrucOnPWJnM0iiJI5g69mpK1cgjRYAGV4BxismlQciMKbZtYiEYg6trbkRI46OHDxAis_T2o1e-y_Yy7XwV503fDxRz7gkLPPU4qltl-vZMdTajLenfNRhAsvgUteYBF89CGDbtz26yrrrrz5xPBFBJYZKf-uvTnIgv2Sn2IaRMqOvYdOOsmdzEhWQTTMsIglaFiwRevWN-KZPHzBj-zYMrTzYwDqd7jmzhgsy19p0c-7qTvcUYXUbkorvsyvcAJLGe0eToJPlgYq1iBOCmWn2gRIKeAFvZ7a2ZbxlhbE7UKDTCMZOlA9mYsiUSmNKky3TSSYN8okZy0ICMHZNo7qBKMP6YCCJ6KCCo9nfNCq-siBDwFnJXYg/p.jpeg']
+  const [picTwo, setPicTwo] = useState('https://previews.dropbox.com/p/thumb/ACW-0_te9rkfhCoDR73pmO1f5zIORQJW4vtAYU-pA7WX7zYHG-L9uJuRShVkaVHhhbNVYNQenA2OquOIcNyWT-k34SXRFiRfUdWOaHWSL8RJpxaAGkqHK0iZI5PwsHCAEPO5BOy6VGtWsmFhffnTgHSvFhl_kGH8ZRe8rce_NaVOrzE2D7iqAzBM7XVaeCKQGV2XOpaKTNO2IrUu_8U2P7ca5oSAvi9Am9puFGNb_qkUIjWnJRGBXgLv0ZcdYY1kVsUIfVQZP1w7UCWwJy9XfK2HAkA-MdTBCBEp_uzFbE-yaxrgEJCSJsaU2d6QYKyxTt0BhsxS9ApwInlyp84l-vxr22uBnwbj25ImSogd_hyk0J4BUo1J2XgKIdkYFv3lmpCtKfVZmg0I2S7n4CrZUYsYH0D59cHSXn_2mWrVNrLpVmZGBcDMXn_J4qZhl4tiUEwAX2GdtWrmkAnF_LSQ4tjrd1_KwDpQiLBqUKKtQ0SCrC4jAqzGkWEEnXnX0guaLMHivynJYgdICTnqON1QfHTbawck3xRxehWMhUtZcL06yygPaDRfHbANd5sG_h7Djr5A2a6Ss-AsWBHBlT5fj1-6iXcQy2nQFh8JLjYxKp1JcQ/p.jpeg ')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -97,8 +99,8 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureThree = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
-  const [picThree, setPicThree] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+  const pictureThree = ['https://previews.dropbox.com/p/thumb/ACUldUmLZmr8m4-BwjUs0qMicHFYCZa66Z9T_5PigJBo_pXrxXrbeVCFF-6LVazLbyi-9k4QmkXQfO5K3ZQhAo1mOqENh_EUb7fdZYmWspYMAqi1CAjVdodKje50TdEwiMw0-MKXAPegX37Vxd0DcdoBJUmK953w526ArB9WXm-hYh1b5qtpzYkstqMYewmaPmbgj3RDahFy6vasm3uGbU_zPE055qDJ3B-7dmvOU_CT3wDPQybXmSQhmh_hfvyn68d2h-okkmNaQGsjPQkxBbck2yg3pz7FUriMDuk0eIQyalykQfaKqVnbsenKmyg4VseW4gbWXpMPuHPN_J7AtU6IO5ivanI1rlNUk4Wi1pe2l48Twz-s4YyaJaAF2yuyaXTkSl_1x1mWzdIqdMEPnbkWimn11egWsNA8-RWQgmF2yUmnTkG5tJ2jQw9N9cfLnJgsplafZmGcLF7ExpZLCXIUgjzLb6uby4pS9Bw9nhJdHcnNF0FGHJwR5O_UtXxDJIs/p.jpeg','https://previews.dropbox.com/p/thumb/ACU4_0mf4PKntAy_Uu3LPjJLbGQ44vT2O9i6t9N1u4xRD_6rY_UhYnoVKpdbq3kGZUxyzaJGffbcdu3JmnQdraQ1mco_LJTKTuLLvSLalU0BRQD8vOFQxaoNrEftHnA2fULO7dsY54VJg-xRAKqU5IaDTD60mlASjvsI8LXOJQf0TXBu_Udop2f3hZsFKL281Bz6ksRFnwRwGGghYjQChM0AB4oKylaE7aEvA9YowhYXF_oVIIDMGpE3byPVi1TJOVFButNZ37RWJ2p1J7KA87k-PlPH2C4JN7WCgYn0t1NLkrHF7YSpCJUe4sKKx6iNlCD-kFQ4cxLMev2MT8NXUKI4bg7gyDdK9tiSqnm-E7kXswgblWweWYQxZUGO26G7PNIk1wfwZv0LeSjGILPXxNDtPVf03LSOMdw2EovdmpfDRGM3ncL00SDrGdtp6tVby4g/p.jpeg']
+  const [picThree, setPicThree] = useState('https://previews.dropbox.com/p/thumb/ACUldUmLZmr8m4-BwjUs0qMicHFYCZa66Z9T_5PigJBo_pXrxXrbeVCFF-6LVazLbyi-9k4QmkXQfO5K3ZQhAo1mOqENh_EUb7fdZYmWspYMAqi1CAjVdodKje50TdEwiMw0-MKXAPegX37Vxd0DcdoBJUmK953w526ArB9WXm-hYh1b5qtpzYkstqMYewmaPmbgj3RDahFy6vasm3uGbU_zPE055qDJ3B-7dmvOU_CT3wDPQybXmSQhmh_hfvyn68d2h-okkmNaQGsjPQkxBbck2yg3pz7FUriMDuk0eIQyalykQfaKqVnbsenKmyg4VseW4gbWXpMPuHPN_J7AtU6IO5ivanI1rlNUk4Wi1pe2l48Twz-s4YyaJaAF2yuyaXTkSl_1x1mWzdIqdMEPnbkWimn11egWsNA8-RWQgmF2yUmnTkG5tJ2jQw9N9cfLnJgsplafZmGcLF7ExpZLCXIUgjzLb6uby4pS9Bw9nhJdHcnNF0FGHJwR5O_UtXxDJIs/p.jpeg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -112,8 +114,8 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const pictureFour = ['https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg', 'https://www.photographytalk.com/images/articles/2018/05/07/articles/2017_8/how_to_take_vertical_landscape_photos.jpg']
-  const [picFour, setPicFour] = useState('https://amateurphotographer.com/wp-content/uploads/sites/7/2023/04/Paulina-Stopka-vertical-landscapesTatra-Mountains.jpg')
+  const pictureFour = ['https://previews.dropbox.com/p/thumb/ACUxuJ6J4HU1peJ-RTAO2jlYCids0wphBP3bhsSTmE-0BiVSlVYytOoUz6SOj7sOR9N62VtapCMRcKsu896oOfIgdxyM_tAYElWvxpyzQB-FmMpYsh-1n8_ceb2AAeO6R5CKp_RwzwPx2hCGDqKZEqXpU_c_UtqvQVoVeGpDZ9e5vOt0m3DlwuBv6Or9SIcpxt8QG3E1tCQ8Vwk2jQbkk9x1VVSnsOkdTpMP6JFNcxXfJUDJ4sfls2z6U5SHUvybpA4fjN7OvvUaNuxHQQZxf8HxY3pjMPWlqSrEuMykqaXpKUeNxyNsobMB854vLo9YrC082ZLXhIk8Pqhh8Nb5PPB-dls4Aa9xaNNWnCDV0OCormTcjqNJPeuox1HcHH29EC4U_S6JSG81gtZK79cKv17UCWYrEOp8LHsYey0XvrFLFFfmyDimIgv2WEBWkbPLAwhrB36kPs7IhABdBJoa-0p0fFFS1O8smmaXfGzbgD3bwgZz1TaXtFMvf5Vtppbe8UPKI-roRQg4ICTHl9Buztr5DE5pjf-LB3hc0YSisA7AiI0F58scz7ynmAsYgovUsPjS2j3PpJ_p8rFy55eNrUMu9W1y8JH9wI7LG1Zu4oSywA/p.jpeg','https://previews.dropbox.com/p/thumb/ACUhXGcGZ-_d-nKghIVNtzIUFNbNcbOdkIT1yilpA3fGDIDTYXBUUUzwsY0qpolDIJOXt_cWhDNnLGJ4sPXpxR5dEy3LSrB2Wivri4dKPuMl4IXY-1M7qSU2SLk5KNPNHi3wHYPjPT3L0rkTi2M7qEGLwsYxu5wUFs-lV-_neuIzL0vKQfPs3GezrGS_JRJ5dhr40wYnHfhMG9_frjCvQnQnc8h6x__NfPvM-QLPf_EDvK_dVPgsDz3gzWftfkCVwH3zuhWzybni3KF1JZ0grBMPFUR6SiLp30CgkcdNvXI41LPpsn8DVzNahLqhiY9qtjc0NgmsAYogFEog3wyEPUob98hL0ruL6VMw6ctPQ4PfX3oCuBWnIIbg1eCDkkIFoBD0MPXzcMDmxBaZgHERRrFrvVKQY_SJame-ODFOdPpy3A/p.jpeg']
+  const [picFour, setPicFour] = useState('https://previews.dropbox.com/p/thumb/ACUxuJ6J4HU1peJ-RTAO2jlYCids0wphBP3bhsSTmE-0BiVSlVYytOoUz6SOj7sOR9N62VtapCMRcKsu896oOfIgdxyM_tAYElWvxpyzQB-FmMpYsh-1n8_ceb2AAeO6R5CKp_RwzwPx2hCGDqKZEqXpU_c_UtqvQVoVeGpDZ9e5vOt0m3DlwuBv6Or9SIcpxt8QG3E1tCQ8Vwk2jQbkk9x1VVSnsOkdTpMP6JFNcxXfJUDJ4sfls2z6U5SHUvybpA4fjN7OvvUaNuxHQQZxf8HxY3pjMPWlqSrEuMykqaXpKUeNxyNsobMB854vLo9YrC082ZLXhIk8Pqhh8Nb5PPB-dls4Aa9xaNNWnCDV0OCormTcjqNJPeuox1HcHH29EC4U_S6JSG81gtZK79cKv17UCWYrEOp8LHsYey0XvrFLFFfmyDimIgv2WEBWkbPLAwhrB36kPs7IhABdBJoa-0p0fFFS1O8smmaXfGzbgD3bwgZz1TaXtFMvf5Vtppbe8UPKI-roRQg4ICTHl9Buztr5DE5pjf-LB3hc0YSisA7AiI0F58scz7ynmAsYgovUsPjS2j3PpJ_p8rFy55eNrUMu9W1y8JH9wI7LG1Zu4oSywA/p.jpeg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -191,29 +193,30 @@ const Home = () => {
       <div className='card-container hidden'>
         <div className='card'>
           <AnimatedPic src={picOne} key={picOne} alt="" />
-          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
-          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+          <h3 className='card-text'>Urban Tapestry</h3>
+          <h4 className='card-subtitle'>Street Photography</h4>
 
         </div>
 
         <div className='card2'>
           <AnimatedPic src={picTwo} key={picTwo} alt="" />
-          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
-          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+          <h3 className='card-text'>Beauty in Decay</h3>
+          <h4 className='card-subtitle'>Architectural Photography</h4>
 
         </div>
 
         <div className='card'>
         <AnimatedPic src={picThree} key={picThree} alt="" />
-        <h3 className='card-text'>Lorem, ipsum dolor.</h3>
-          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+        <h3 className='card-text'>Face to Face</h3>
+          <h4 className='card-subtitle'>Potrait Photography</h4>
 
         </div>
 
         <div className='card2'>
         <AnimatedPic src={picFour} key={picFour} alt="" />
-          <h3 className='card-text'>Lorem, ipsum dolor.</h3>
-          <h4 className='card-subtitle'>Lorem, ipsum.</h4>
+          <h3 className='card-text'>The Golden Hour
+          </h3>
+          <h4 className='card-subtitle'>Sunset Photography</h4>
         </div>
       </div>
       <img className='shape3' src={shape3} alt="" />
