@@ -122,6 +122,7 @@
 }
 
 .card2 {
+    margin-top: 150px;
     max-width: 328px;
     min-height: 600px;
     height: 100%;
@@ -161,7 +162,7 @@
 
 .card-text {
     position: absolute;
-    bottom: 120px;
+    bottom: 300px;
     left: 20px;
     color: white;
     font-size: 24px;
@@ -173,7 +174,7 @@
 
 .card-subtitle {
     position: absolute;
-    bottom: 80px;
+    bottom: 270px;
     left: 20px;
     color: white;
     font-size: 20px;
@@ -186,7 +187,7 @@
 
 .card-text2 {
     position: absolute;
-    bottom: 140px;
+    bottom: 300px;
     left: 20px;
     color: white;
     font-size: 24px;
@@ -198,7 +199,7 @@
 
 .card-subtitle2 {
     position: absolute;
-    bottom: 100px;
+    bottom: 270px;
     left: 20px;
     color: white;
     font-size: 20px;
@@ -388,22 +389,22 @@
     }
 
     .card-text {
-        bottom: 40px;
+        bottom: 140px;
         left: 20px;
     }
 
     .card-subtitle {
-        bottom: 0px;
+        bottom: 110px;
         left: 20px;
     }
 
     .card-text2 {
-        bottom: 60px;
+        bottom: 140px;
         left: 20px;
     }
 
     .card-subtitle2 {
-        bottom: 20px;
+        bottom: 110px;
         left: 20px;
     }
 
@@ -529,6 +530,27 @@
         color: white;
     
     }
+
+    .card-text {
+        bottom: 60px;
+        left: 20px;
+    }
+
+    .card-subtitle {
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .card-text2 {
+        bottom: 60px;
+        left: 20px;
+    }
+
+    .card-subtitle2 {
+        bottom: 30px;
+        left: 20px;
+    }
+
         
     
 
@@ -539,6 +561,18 @@
 
 
 @media screen and (max-width: 580px) {
+
+    .shape1 {
+        display: block;
+        width: 75px;
+        margin-top: 20px;
+    } 
+    
+    .shape2 {
+        display: block;
+        width: 80px;
+        top: 80px;
+    }
 
     .title-div {
         font-family: 'Montserrat', sans-serif;

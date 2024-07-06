@@ -85,8 +85,8 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureTwo = ['https://i.imgur.com/MmIeaok.png','https://i.imgur.com/1htvc4D.png']
-  const [picTwo, setPicTwo] = useState('https://i.imgur.com/MmIeaok.png')
+  const pictureTwo = ['https://i.imgur.com/E6zMnzg.jpg','https://i.imgur.com/kyk1Zn1.jpg']
+  const [picTwo, setPicTwo] = useState('https://i.imgur.com/E6zMnzg.jpg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -115,8 +115,8 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const pictureFour = ['https://i.imgur.com/LZKNcdf.png','https://i.imgur.com/W5v0fb4.png']
-  const [picFour, setPicFour] = useState('https://i.imgur.com/LZKNcdf.png')
+  const pictureFour = ['https://i.imgur.com/L5EaD2u.jpg','https://i.imgur.com/1DAaQHG.jpg']
+  const [picFour, setPicFour] = useState('https://i.imgur.com/L5EaD2u.jpg')
 
   useEffect(() => {
     const intervalId = setInterval(() => {
