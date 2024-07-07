@@ -52,7 +52,10 @@ const Navbar = () => {
                         </li>
 
                         <li onMouseEnter={navTextEnter} onMouseLeave={textLeave}>
-                            <NavLink onClick={handleShowNavbar} to="/libraries">SERVICES</NavLink>
+                        <LinkScroll smooth={true} duration={3000} to='services' offset={-50}  >
+
+                            <NavLink onClick={handleShowNavbar} >SERVICES</NavLink>
+                            </LinkScroll>
 
                         </li>
 

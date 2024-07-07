@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import styles from './index.module.css';
-import Picture1 from '../../assets/zoom/1.jpeg';
-import Picture2 from '../../assets/zoom/2.jpeg';
+import Picture1 from '../../assets/zoom/1.jpg';
+import Picture2 from '../../assets/zoom/2.jpg';
 import Picture3 from '../../assets/zoom/3.jpg';
 import Picture4 from '../../assets/zoom/4.jpg';
 import Picture5 from '../../assets/zoom/5.jpg';
 import Picture6 from '../../assets/zoom/6.jpg';
-import Picture7 from '../../assets/zoom/7.jpeg';
+import Picture7 from '../../assets/zoom/7.jpg';
 
 
 const Index = () => {
@@ -26,11 +26,11 @@ const Index = () => {
   const pictures = [
     { src: Picture1, scale: scale4 },
     { src: Picture2, scale: scale5 },
-    { src: Picture3, scale: scale6 },
+    { src: Picture7, scale: scale6 },
     { src: Picture4, scale: scale5 },
     { src: Picture5, scale: scale6 },
     { src: Picture6, scale: scale8 },
-    { src: Picture7, scale: scale9 }
+    { src: Picture3, scale: scale9 },
   ];
 
   return (
