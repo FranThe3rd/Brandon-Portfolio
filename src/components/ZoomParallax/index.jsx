@@ -53,7 +53,7 @@ const testingPictures = [
   return (
     <div ref={container} className={styles.container}>
       <div className={styles.sticky}>
-        {testingPictures.map(({ src, scale }, index) => (
+        {pictures.map(({ src, scale }, index) => (
           <motion.div key={index} style={{ scale }} className={styles.el}>
             <div className={styles.imageContainer}>
               <img
