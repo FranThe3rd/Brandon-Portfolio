@@ -429,6 +429,8 @@
     cursor: pointer;
 }
 
+
+
 .contact h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: clamp(2rem, 3vw, 3.55rem);
@@ -634,6 +636,15 @@
     .card-subtitle2 {
         bottom: 30px;
         left: 20px;
+    }
+
+    .recent {
+        width: 100%;
+        text-align: center;
+    }
+
+    .recent h1 {
+        text-align: center;
     }
 
         
