@@ -222,7 +222,7 @@ const Home = () => {
       <img className='shape3' src={shape3} alt="" />
       <div className='border-line1'></div>
       
-      <div className='zoom-container hidden'>
+      <div className='zoom-container '>
         <Index />
 
       </div>
