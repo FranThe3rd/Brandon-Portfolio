@@ -236,7 +236,8 @@ const Home = () => {
           <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Hi. I'm</h1>
           <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Brandon Guaman</h1>
           <img src={aboutQuote} className='about-quote' alt="" />
-          <p onMouseEnter={navTextEnter} onMouseLeave={textLeave}>A passionate photographer that's currently doing Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+          <p onMouseEnter={navTextEnter} onMouseLeave={textLeave}>I am a passionate photographer that's currently studying at Northampton Community College for media productions.
+          </p>
         </div>
       </div>
       </div>
@@ -249,7 +250,7 @@ const Home = () => {
         <div className='service'>
           <div className='service-text'>
           <h1 className='hidden'>Photography</h1>
-          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          <p className='hidden'>Personalized Photography For You.</p>
           </div>
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
         </div>
@@ -257,7 +258,7 @@ const Home = () => {
         <div className='service'>
           <div className='service-text'>
           <h1 className='hidden'>Videography</h1>
-          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          <p className='hidden'>Professional Video Services For You.</p>
           </div>
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight/></button>
 
@@ -266,7 +267,7 @@ const Home = () => {
         <div className='service'>
           <div className='service-text'>
           <h1 className='hidden'>Film Editing</h1>
-          <p className='hidden'>Lorem ipsum dolor sit.</p>
+          <p className='hidden'>Creative Film Editing Services.</p>
           </div>
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
 

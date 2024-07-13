@@ -345,7 +345,7 @@
     font-weight: 500;
 }
 .service p {
-    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    font-size: clamp(.7rem, 3vw, 1.5rem);
     color: white;
     text-align: left;
     font-weight: 100;
@@ -478,6 +478,23 @@
 
     .about-me > :nth-child(1) {
         grid-row: 2;
+    }
+
+
+    .firstName {
+        font-size: clamp(3rem, 10vw, 5rem);
+        color: white;
+        margin: 0;
+        letter-spacing: 0.1em;
+
+    }
+
+    .lastName {
+        letter-spacing: 0.1em;
+        font-size: clamp(3rem, 10vw, 5rem);
+        color: white;
+        margin: 0;
+        margin-left: 0px;
     }
 
 
