@@ -282,10 +282,10 @@ const Home = () => {
       <div className='recent'>
         <h1 className='hidden'>My Recent Work</h1>
         <div className='recent-grid'>
-          <video className='hidden' controls muted autoPlay src={vid1}></video>
-          <video className='hidden' controls muted autoPlay src={vid2}></video>
-          <video className='hidden' controls muted autoPlay src={vid3}></video>
-          <video className='hidden' controls muted autoPlay src={vid4}></video>
+          <video className='hidden' controls loop muted autoPlay src={vid1}></video>
+          <video className='hidden' controls loop muted autoPlay src={vid2}></video>
+          <video className='hidden' controls loop muted autoPlay src={vid3}></video>
+          <video className='hidden' controls loop muted autoPlay src={vid4}></video>
         </div>
       </div>
 
