@@ -282,10 +282,12 @@ const Home = () => {
       <div className='recent'>
         <h1 className='hidden'>My Recent Work</h1>
         <div className='recent-grid'>
-          <video className='hidden' playsinline  loop muted autoPlay src={vid1}></video>
-          <video className='hidden' playsinline  loop muted autoPlay src={vid2}></video>
-          <video className='hidden' playsinline  loop muted autoPlay src={vid3}></video>
-          <video className='hidden' playsinline  loop muted autoPlay src={vid4}></video>
+          <video className='hidden' playsinline  loop muted autoPlay>
+            <source src={vid1} type="video/mp4" />
+            <source src={vid2} type="video/mp4" />
+            <source src={vid3} type="video/mp4" />
+            <source src={vid4} type="video/mp4" />
+          </video>
         </div>
       </div>
 
