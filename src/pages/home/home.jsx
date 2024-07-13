@@ -18,6 +18,10 @@ import useHidden from '../../animations/transitions/useHidden';
 import useSlideToLeft from '../../animations/transitions/useSlideToLeft';
 import useSlideToRight from '../../animations/transitions/useSlideToRight';
 import { ArrowRight } from 'phosphor-react';
+import vid1 from '../../assets/gallery/vid1.mp4'
+import vid2 from '../../assets/gallery/vid2.mp4'
+import vid3 from '../../assets/gallery/vid3.mp4'
+import vid4 from '../../assets/gallery/vid4.mp4'
 
 
 
@@ -222,10 +226,11 @@ const Home = () => {
       <img className='shape3' src={shape3} alt="" />
       <div className='border-line1'></div>
       
-      <div className='zoom-container '>
+      <div className='zoom-container hidden'>
         <Index />
 
       </div>
+
       <div className='about-container'>
 
       <div className='about-me'>
@@ -272,9 +277,21 @@ const Home = () => {
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
 
         </div>
+      </div>
 
-        
+      <div className='recent'>
+        <h1 className='hidden'>My Recent Work</h1>
+        <div className='recent-grid'>
+          <video className='hidden' controls muted autoPlay src={vid1}></video>
+          <video className='hidden' controls muted autoPlay src={vid2}></video>
+          <video className='hidden' controls muted autoPlay src={vid3}></video>
+          <video className='hidden' controls muted autoPlay src={vid4}></video>
+        </div>
+      </div>
 
+      <div className='border-line2'></div>
+      <div className='contact'>
+        <h2>Contact Me</h2>
       </div>
 
     </div>
