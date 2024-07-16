@@ -8,7 +8,7 @@ import styled, { keyframes } from 'styled-components';
 import { motion } from 'framer-motion';
 import { CursorContext } from '../../components/cursor/CursorContext'
 import shape1 from '../../assets/shape1.svg'
-import shape2 from '../../assets/shape2.svg'
+import shape2 from '../../assets/shape2.png'
 import shape3 from '../../assets/shape3.svg'
 import shape4 from '../../assets/shape4.png'
 import Index from '../../components/ZoomParallax';

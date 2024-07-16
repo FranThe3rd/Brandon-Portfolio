@@ -59,7 +59,13 @@ const Navbar = () => {
 
                         </li>
 
-                        
+                        <li className='contact-button-nav' onMouseEnter={navTextEnter} onMouseLeave={textLeave}>
+                        <LinkScroll smooth={true} duration={4000} to='contact' offset={-50}  >
+
+                            <NavLink onClick={handleShowNavbar}>CONTACT</NavLink>
+                            </LinkScroll>
+
+                        </li>
 
 
                     </ul>
