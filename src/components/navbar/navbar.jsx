@@ -59,10 +59,7 @@ const Navbar = () => {
 
                         </li>
 
-                        <li onMouseEnter={navTextEnter} onMouseLeave={textLeave}>
-                            <NavLink onClick={handleShowNavbar} to="/libraries">PORTFOLIO</NavLink>
-
-                        </li>
+                        
 
 
                     </ul>
