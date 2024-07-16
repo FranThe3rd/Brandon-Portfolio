@@ -17,11 +17,13 @@ import aboutQuote from '../../assets/about-quote.svg'
 import useHidden from '../../animations/transitions/useHidden';
 import useSlideToLeft from '../../animations/transitions/useSlideToLeft';
 import useSlideToRight from '../../animations/transitions/useSlideToRight';
-import { ArrowRight } from 'phosphor-react';
+import { ArrowRight, Envelope,InstagramLogo,YoutubeLogo,TiktokLogo } from 'phosphor-react';
 import vid1 from '../../assets/gallery/vid1.mp4'
 import vid2 from '../../assets/gallery/vid2.mp4'
 import vid3 from '../../assets/gallery/vid3.mp4'
 import vid4 from '../../assets/gallery/vid4.mp4'
+import { Link as LinkScroll } from 'react-scroll';
+
 
 
 
@@ -257,7 +259,9 @@ const Home = () => {
           <h1 className='hidden'>Photography</h1>
           <p className='hidden'>Personalized Photography For You.</p>
           </div>
+          <LinkScroll to='contact' smooth={true} duration={2000}>
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+          </LinkScroll>
         </div>
 
         <div className='service'>
@@ -265,8 +269,9 @@ const Home = () => {
           <h1 className='hidden'>Videography</h1>
           <p className='hidden'>Professional Video Services For You.</p>
           </div>
-          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight/></button>
-
+          <LinkScroll to='contact' smooth={true} duration={2000}>
+          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+          </LinkScroll>
         </div>
 
         <div className='service'>
@@ -274,8 +279,9 @@ const Home = () => {
           <h1 className='hidden'>Film Editing</h1>
           <p className='hidden'>Creative Film Editing Services.</p>
           </div>
+          <LinkScroll to='contact' smooth={true} duration={2000}>
           <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
-
+          </LinkScroll>
         </div>
       </div>
 
@@ -292,7 +298,26 @@ const Home = () => {
       <div className='border-line2'></div>
       <div className='contact'>
         <h2>Contact Me</h2>
+        <h4>Please email me to discuss your requirements for the services.</h4>
+
       </div>
+      <div className='social-icons'>
+      <a onMouseEnter={navTextEnter} onMouseLeave={textLeave}  href="mailto:Brandonguaman18@gmail.com">
+      <Envelope  color='white' />
+      </a>
+      <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} target='_blank' href="https://www.instagram.com/filmic.brandon/">
+        <InstagramLogo  color='white'/>
+        </a>
+        <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} href="https://www.youtube.com/@BrandonGuaman" target='_blank'>
+        <YoutubeLogo  color='white'/>
+        </a>
+        <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} href="https://tiktok.com/@filmic.brandon?_t=8fntslVFApH&_r=1" target='_blank'>
+        <TiktokLogo  color='white'/>
+        </a>
+
+      </div>
+
+
 
     </div>
 
