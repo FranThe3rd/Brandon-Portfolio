@@ -215,29 +215,29 @@ const Home = () => {
         }}
       />
 
-      <div className='card-container hidden'>
+      <div className='card-container '>
         <div className='card'>
-          <AnimatedPic src={picOne} key={picOne} alt="" />
+          <AnimatedPic loading='lazy'  src={picOne} key={picOne} alt="" />
           <h3 className='card-text'>Urban Tapestry</h3>
           <h4 className='card-subtitle'>Street Photography</h4>
         </div>
 
         <div className='card2'>
-          <AnimatedPic src={picTwo} key={picTwo} alt="" />
+          <AnimatedPic loading='lazy'  src={picTwo} key={picTwo} alt="" />
           <h3 className='card-text2'>Beauty in Decay</h3>
           <h4 className='card-subtitle2'>Architectural Photography</h4>
 
         </div>
 
         <div className='card'>
-          <AnimatedPic src={picThree} key={picThree} alt="" />
+          <AnimatedPic loading='lazy'  src={picThree} key={picThree} alt="" />
           <h3 className='card-text'>Face to Face</h3>
           <h4 className='card-subtitle'>Potrait Photography</h4>
 
         </div>
 
         <div className='card2'>
-          <AnimatedPic src={picFour} key={picFour} alt="" />
+          <AnimatedPic loading='lazy'  src={picFour} key={picFour} alt="" />
           <h3 className='card-text2'>The Golden Hour
           </h3>
           <h4 className='card-subtitle2'>Sunset Photography</h4>
