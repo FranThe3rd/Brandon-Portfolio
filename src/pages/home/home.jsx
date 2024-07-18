@@ -17,12 +17,14 @@ import aboutQuote from '../../assets/about-quote.svg'
 import useHidden from '../../animations/transitions/useHidden';
 import useSlideToLeft from '../../animations/transitions/useSlideToLeft';
 import useSlideToRight from '../../animations/transitions/useSlideToRight';
-import { ArrowRight, Envelope,InstagramLogo,YoutubeLogo,TiktokLogo } from 'phosphor-react';
+import { ArrowRight, Envelope, InstagramLogo, YoutubeLogo, TiktokLogo } from 'phosphor-react';
 import vid1 from '../../assets/gallery/vid1.mp4'
 import vid2 from '../../assets/gallery/vid2.mp4'
 import vid3 from '../../assets/gallery/vid3.mp4'
 import vid4 from '../../assets/gallery/vid4.mp4'
 import { Link as LinkScroll } from 'react-scroll';
+import Lenis from 'lenis'
+
 
 
 
@@ -76,7 +78,7 @@ const Home = () => {
 
   /* Picture Animation Start-------------------------------------------------------- */
 
-  const pictureOne = ['https://i.imgur.com/bqZVBQG.jpeg','https://i.imgur.com/mBuCwi8.jpeg', 'https://i.imgur.com/0bg1Yk4.jpg']
+  const pictureOne = ['https://i.imgur.com/bqZVBQG.jpeg', 'https://i.imgur.com/mBuCwi8.jpeg', 'https://i.imgur.com/0bg1Yk4.jpg']
 
   const [picOne, setPicOne] = useState('https://i.imgur.com/bqZVBQG.jpeg')
   useEffect(() => {
@@ -91,7 +93,7 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureTwo = ['https://i.imgur.com/E6zMnzg.jpg','https://i.imgur.com/kyk1Zn1.jpg']
+  const pictureTwo = ['https://i.imgur.com/E6zMnzg.jpg', 'https://i.imgur.com/kyk1Zn1.jpg']
   const [picTwo, setPicTwo] = useState('https://i.imgur.com/E6zMnzg.jpg')
 
   useEffect(() => {
@@ -106,7 +108,7 @@ const Home = () => {
     return () => clearInterval(intervalId); // Clean up interval on component unmount
   }, []);
 
-  const pictureThree = ['https://i.imgur.com/pFz4bFF.jpg','https://i.imgur.com/4q0UF1B.jpeg']
+  const pictureThree = ['https://i.imgur.com/pFz4bFF.jpg', 'https://i.imgur.com/4q0UF1B.jpeg']
 
   const [picThree, setPicThree] = useState('https://i.imgur.com/pFz4bFF.jpg')
   useEffect(() => {
@@ -121,7 +123,7 @@ const Home = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  const pictureFour = ['https://i.imgur.com/L5EaD2u.jpg','https://i.imgur.com/1DAaQHG.jpg']
+  const pictureFour = ['https://i.imgur.com/L5EaD2u.jpg', 'https://i.imgur.com/1DAaQHG.jpg']
   const [picFour, setPicFour] = useState('https://i.imgur.com/L5EaD2u.jpg')
 
   useEffect(() => {
@@ -174,12 +176,28 @@ const Home = () => {
 
   /* Cursor Animation End-------------------------------------------------------- */
 
+  /* Lenis Scroll-------------------------------------------------------- */
+
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+  }, [])
+
+
+
 
   return (
     <div className='home'>
       <Navbar />
       <div className='title-div hidden'>
-        <h1  onMouseEnter={textEnter} onMouseLeave={textLeave} className='firstName'>Brandon</h1>
+        <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className='firstName'>Brandon</h1>
         <AnimatedText onMouseEnter={textEnter} onMouseLeave={textLeave} className='lastName' key={text}>{text}</AnimatedText>
       </div>
       <img className='shape1' src={shape1} alt="" />
@@ -212,14 +230,14 @@ const Home = () => {
         </div>
 
         <div className='card'>
-        <AnimatedPic src={picThree} key={picThree} alt="" />
-        <h3 className='card-text'>Face to Face</h3>
+          <AnimatedPic src={picThree} key={picThree} alt="" />
+          <h3 className='card-text'>Face to Face</h3>
           <h4 className='card-subtitle'>Potrait Photography</h4>
 
         </div>
 
         <div className='card2'>
-        <AnimatedPic src={picFour} key={picFour} alt="" />
+          <AnimatedPic src={picFour} key={picFour} alt="" />
           <h3 className='card-text2'>The Golden Hour
           </h3>
           <h4 className='card-subtitle2'>Sunset Photography</h4>
@@ -227,7 +245,7 @@ const Home = () => {
       </div>
       <img className='shape3' src={shape3} alt="" />
       <div className='border-line1'></div>
-      
+
       <div className='zoom-container hidden'>
         <Index />
 
@@ -235,52 +253,52 @@ const Home = () => {
 
       <div className='about-container'>
 
-      <div className='about-me'>
-        <div className="about-me-image right">
-        <img src={aboutImage} alt="" />
+        <div className='about-me'>
+          <div className="about-me-image right">
+            <img src={aboutImage} alt="" />
+          </div>
+          <div className='about-me-text left'>
+            <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Hi. I'm</h1>
+            <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Brandon Guaman</h1>
+            <img src={aboutQuote} className='about-quote' alt="" />
+            <p onMouseEnter={navTextEnter} onMouseLeave={textLeave}>I am a passionate photographer that's currently studying at Northampton Community College for media productions.
+            </p>
+          </div>
         </div>
-        <div className='about-me-text left'>
-          <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Hi. I'm</h1>
-          <h1 onMouseEnter={navTextEnter} onMouseLeave={textLeave}>Brandon Guaman</h1>
-          <img src={aboutQuote} className='about-quote' alt="" />
-          <p onMouseEnter={navTextEnter} onMouseLeave={textLeave}>I am a passionate photographer that's currently studying at Northampton Community College for media productions.
-          </p>
-        </div>
-      </div>
       </div>
       <div className='shape4-container'>
-      <img className='shape4' src={shape4} alt="" /></div>
+        <img className='shape4' src={shape4} alt="" /></div>
 
       <div className='services'>
         <h4 className='services-title'>MY SERVICES</h4>
 
         <div className='service'>
           <div className='service-text'>
-          <h1 className='hidden'>Photography</h1>
-          <p className='hidden'>Personalized Photography For You.</p>
+            <h1 className='hidden'>Photography</h1>
+            <p className='hidden'>Personalized Photography For You.</p>
           </div>
           <LinkScroll to='contact' smooth={true} duration={2000}>
-          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+            <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
           </LinkScroll>
         </div>
 
         <div className='service'>
           <div className='service-text'>
-          <h1 className='hidden'>Videography</h1>
-          <p className='hidden'>Professional Video Services For You.</p>
+            <h1 className='hidden'>Videography</h1>
+            <p className='hidden'>Professional Video Services For You.</p>
           </div>
           <LinkScroll to='contact' smooth={true} duration={2000}>
-          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+            <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
           </LinkScroll>
         </div>
 
         <div className='service'>
           <div className='service-text'>
-          <h1 className='hidden'>Film Editing</h1>
-          <p className='hidden'>Creative Film Editing Services.</p>
+            <h1 className='hidden'>Film Editing</h1>
+            <p className='hidden'>Creative Film Editing Services.</p>
           </div>
           <LinkScroll to='contact' smooth={true} duration={2000}>
-          <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
+            <button onMouseEnter={navTextEnter} onMouseLeave={textLeave} className='service-button'><ArrowRight /></button>
           </LinkScroll>
         </div>
       </div>
@@ -289,8 +307,8 @@ const Home = () => {
         <h1 className='hidden'>My Recent Work</h1>
         <div className='recent-grid'>
           <video className='video-tag  hidden' playsinline controls loop muted autoPlay src={vid1}></video>
-          <video className='video-tag hidden' playsinline controls  loop muted autoPlay src={vid2}></video>
-          <video className='video-tag hidden ' playsinline controls  loop muted autoPlay src={vid3}></video>
+          <video className='video-tag hidden' playsinline controls loop muted autoPlay src={vid2}></video>
+          <video className='video-tag hidden ' playsinline controls loop muted autoPlay src={vid3}></video>
           <video className='video-tag hidden ' playsinline controls loop muted autoPlay src={vid4}></video>
         </div>
       </div>
@@ -302,17 +320,17 @@ const Home = () => {
 
       </div>
       <div className='social-icons'>
-      <a onMouseEnter={navTextEnter} onMouseLeave={textLeave}  href="mailto:Brandonguaman18@gmail.com">
-      <Envelope  color='white' />
-      </a>
-      <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} target='_blank' href="https://www.instagram.com/filmic.brandon/">
-        <InstagramLogo  color='white'/>
+        <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} href="mailto:Brandonguaman18@gmail.com">
+          <Envelope color='white' />
+        </a>
+        <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} target='_blank' href="https://www.instagram.com/filmic.brandon/">
+          <InstagramLogo color='white' />
         </a>
         <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} href="https://www.youtube.com/@BrandonGuaman" target='_blank'>
-        <YoutubeLogo  color='white'/>
+          <YoutubeLogo color='white' />
         </a>
         <a onMouseEnter={navTextEnter} onMouseLeave={textLeave} href="https://tiktok.com/@filmic.brandon?_t=8fntslVFApH&_r=1" target='_blank'>
-        <TiktokLogo  color='white'/>
+          <TiktokLogo color='white' />
         </a>
 
       </div>
