@@ -218,12 +218,14 @@ const Home = () => {
       <div className='card-container '>
         <div className='card'>
           <AnimatedPic loading='lazy'  src={picOne} key={picOne} alt="" />
+          <button className='card-btn'><ArrowRight /></button>
           <h3 className='card-text'>Urban Tapestry</h3>
           <h4 className='card-subtitle'>Street Photography</h4>
         </div>
 
         <div className='card2'>
           <AnimatedPic loading='lazy'  src={picTwo} key={picTwo} alt="" />
+          <button className='card-btn'><ArrowRight /></button>
           <h3 className='card-text2'>Beauty in Decay</h3>
           <h4 className='card-subtitle2'>Architectural Photography</h4>
 
@@ -231,17 +233,14 @@ const Home = () => {
 
         <div className='card'>
           <AnimatedPic loading='lazy'  src={picThree} key={picThree} alt="" />
+          <button className='card-btn'><ArrowRight /></button>
+
           <h3 className='card-text'>Face to Face</h3>
           <h4 className='card-subtitle'>Potrait Photography</h4>
 
         </div>
 
-        <div className='card2'>
-          <AnimatedPic loading='lazy'  src={picFour} key={picFour} alt="" />
-          <h3 className='card-text2'>The Golden Hour
-          </h3>
-          <h4 className='card-subtitle2'>Sunset Photography</h4>
-        </div>
+     
       </div>
       <img className='shape3' src={shape3} alt="" />
       <div className='border-line1'></div>
@@ -306,10 +305,10 @@ const Home = () => {
       <div className='recent'>
         <h1 className='hidden'>My Recent Work</h1>
         <div className='recent-grid'>
-          <video className='video-tag  hidden' playsinline controls loop muted autoPlay src={vid1}></video>
-          <video className='video-tag hidden' playsinline controls loop muted autoPlay src={vid2}></video>
-          <video className='video-tag hidden ' playsinline controls loop muted autoPlay src={vid3}></video>
-          <video className='video-tag hidden ' playsinline controls loop muted autoPlay src={vid4}></video>
+          <video className='video-tag  hidden' playsinline  loop muted autoPlay src={vid1}></video>
+          <video className='video-tag hidden' playsinline  loop muted autoPlay src={vid2}></video>
+          <video className='video-tag hidden ' playsinline  loop muted autoPlay src={vid3}></video>
+          <video className='video-tag hidden ' playsinline  loop muted autoPlay src={vid4}></video>
         </div>
       </div>
 
