@@ -1,7 +1,10 @@
 import React, { useRef } from 'react'
 import './photography.css'
-import "react-photo-album/columns.css";
-import { ColumnsPhotoAlbum } from "react-photo-album";
+
+import PhotoAlbum from "react-photo-album"; 
+
+
+
 import photo1 from '../../assets/everything/DJI_0040.jpg'
 import photo2 from '../../assets/everything/DJI_0051 copy.jpg'
 import photo3 from '../../assets/everything/DJI_0087 copy.jpg'
@@ -121,9 +124,8 @@ const Phorography = () => {
                animate={{ opacity: 1, }}
                transition={{ duration: 2, ease: "easeOut", delay: 1 }}>
 
+        <PhotoAlbum layout="columns" photos={photos} />
 
-               <ColumnsPhotoAlbum photos={photos}>
-               </ColumnsPhotoAlbum>
 
 
 
